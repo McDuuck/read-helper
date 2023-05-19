@@ -1,0 +1,15 @@
+{
+  "name": "Read helper",
+  "manifest_version": 3,
+  "version": "1.0",
+  "description": "Bolding first 2 letters to help u read",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://*/*", "http://*/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
